@@ -1,0 +1,23 @@
+<div class="col-xs-4">
+  <div class="table">
+    <ul class="list-unstyled">
+      <li [class.selected]="mail.hasBeenRead" (click)="onSelect(mail)" *ngFor="let mail of mails">
+        <span class="badge pull-right" (click)="delete(mail)">x</span>
+        <h4>{{ mail.sender }}</h4>
+        <p>{{ mail.subject }}</p>
+        <p>{{ mail.time_formatted }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="col-xs-8">
+  <div class="" *ngIf="selectedMail">
+    <p>From: {{ selectedMail.sender }}</p>
+    <p>Subject: {{ selectedMail.subject }}</p>
+    <p>Sent on: {{ selectedMail.time_formatted }}</p>
+
+    <div>
+      <p>{{ selectedMail.message }}</p>
+    </div>
+  </div>
+</div>
