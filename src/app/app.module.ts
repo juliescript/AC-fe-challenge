@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MailListingComponent } from './mail-listing/mail-listing.component';
 
-import { GetMailsService } from './services/get-mails.service';
+import { GetMailsService } from './shared/services/get-mails.service';
 
 import { routing } from './app.routing';
 

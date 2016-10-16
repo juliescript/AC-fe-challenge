@@ -1,31 +1,37 @@
-# ACFeChallenge
+# AskCharlie Coding Challenge
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
+## Assumptions:
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- JSON file should be read from an internal URL which is to be replaced by a real URL once the backend is up and running
+- CSS should be done with Bootstrap classes to make browser compatibility less of a hassle for a prototype
+- DO NOT edit on the original file so that there is data to be read
+- Services and classes should be together on the "shared" folder inside the app
 
-## Code scaffolding
+## Nice to haves:
+- It would be nice to create a Node.JS based backend using LoopBack and FireBase
+- Some actual design would be nice, as I'm no UX expert, I left the whole thing as clean as possible
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+## What I used to build this project
 
-## Build
+- [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
+- [Bootstrap 3](http://getbootstrap.com)
+- [moment.js](http://momentjs.com)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## To run this project
 
-## Running unit tests
+You will need to install `angular-cli`, to do that you just need to:
+- `npm -g i angulr-cli@latest`
+- `git clone https://github.com/juliettemaxwell/AC-fe-challenge.git`
+- Navigate to created directory
+- `npm install`
+- Once the installation is done, just run `ng serve`
+
+## To run unit test
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Final notes
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
+Thank you so much for taking your time to review my code. I will be looking forward for whichever feedback you can give me. 
 
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Cheers!

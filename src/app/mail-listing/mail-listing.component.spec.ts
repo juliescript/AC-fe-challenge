@@ -2,8 +2,8 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { MailListingComponent } from './mail-listing.component';
-import { Mail } from '../shared/mail';
-import { GetMailsService } from '../services/get-mails.service';
+import { Mail } from '../shared/models/mail';
+import { GetMailsService } from '../shared/services/get-mails.service';
 
 describe('Component: MailListing', () => {
   it('should create an instance', () => {
