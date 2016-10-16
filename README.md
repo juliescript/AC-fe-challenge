@@ -20,7 +20,7 @@
 ## To run this project
 
 You will need to install `angular-cli`, to do that you just need to:
-- `npm -g i angulr-cli@latest`
+- `npm i -g angular-cli@latest`
 - `git clone https://github.com/juliettemaxwell/AC-fe-challenge.git`
 - Navigate to created directory
 - `npm install`
