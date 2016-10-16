@@ -1,5 +1,5 @@
 import { Injectable }    from '@angular/core';
-import { Headers, Http } from '@angular/http';
+import { Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
@@ -9,7 +9,6 @@ import { Mail } from '../shared/mail';
 
 export class GetMailsService {
 
-  private headers = new Headers({'Content-Type': 'application/json'});
   private mailsUrl = 'app/shared/messages_sample.json';  // URL to web api
 
   constructor(private http: Http) { }

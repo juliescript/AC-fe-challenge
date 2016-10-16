@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 import { GetMailsService } from '../services/get-mails.service';
 import { Mail } from '../shared/mail';
@@ -23,25 +22,29 @@ export class MailListingComponent implements OnInit {
     this.getMails.getMails().then(
       (mails) => {
         this.mails = mails.map(mail => {
-          //  format "Mon 06 July, 10:53",
-           mail.time_formatted =  moment.unix(mail.time_sent).format('ddd DD MMMM, HH:mm');
+           mail.time_formatted =  this.formatTime(mail.time_sent);
            return mail;
         });
       }
     );
   }
 
-  onSelect(mail: Mail){
+  onSelect(mail: Mail) {
     mail.hasBeenRead = true;
     this.selectedMail = mail;
   }
 
-  delete(mail: Mail){
+  delete(mail: Mail) {
     let index = this.mails.indexOf(mail);
     this.mails.splice(index, 1);
-    if(this.selectedMail.uid === mail.uid){
+    if (this.selectedMail.uid === mail.uid) {
       this.selectedMail = null;
     }
+  }
+
+  formatTime(utd: number) {
+    //  format "Mon 06 July, 10:53"
+    return moment.unix(utd).format('ddd DD MMMM, HH:mm');
   }
 
 }
