@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { Mail } from '../shared/mail';
+import { Mail } from '../models/mail';
 
 @Injectable()
 
