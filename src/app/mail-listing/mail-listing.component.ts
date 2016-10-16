@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { GetMailsService } from '../services/get-mails.service';
-import { Mail } from '../shared/mail';
+import { GetMailsService } from '../shared/services/get-mails.service';
+import { Mail } from '../shared/models/mail';
 
 import * as moment from 'moment';
 
