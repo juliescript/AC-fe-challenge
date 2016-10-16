@@ -1,7 +1,15 @@
 .selected{
     background: #fff;
+    font-weight: 400;
 }
 
 li{
     background: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.badge{
+    cursor: pointer;
 }

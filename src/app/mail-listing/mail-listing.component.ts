@@ -39,6 +39,9 @@ export class MailListingComponent implements OnInit {
   delete(mail: Mail){
     let index = this.mails.indexOf(mail);
     this.mails.splice(index, 1);
+    if(this.selectedMail.uid === mail.uid){
+      this.selectedMail = null;
+    }
   }
 
 }

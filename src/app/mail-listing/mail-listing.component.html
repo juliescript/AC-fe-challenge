@@ -11,13 +11,10 @@
   </div>
 </div>
 <div class="col-xs-8">
-  <div class="" *ngIf="selectedMail">
-    <p>From: {{ selectedMail.sender }}</p>
-    <p>Subject: {{ selectedMail.subject }}</p>
-    <p>Sent on: {{ selectedMail.time_formatted }}</p>
-
-    <div>
-      <p>{{ selectedMail.message }}</p>
-    </div>
+  <div *ngIf="selectedMail">
+    <h2>{{ selectedMail.subject }}</h2>
+    <p><small>From: {{ selectedMail.sender }}<br>
+    Sent on: {{ selectedMail.time_formatted }}</small></p>
+    <p>{{ selectedMail.message }}</p>
   </div>
 </div>
